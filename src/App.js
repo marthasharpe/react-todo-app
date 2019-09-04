@@ -4,12 +4,9 @@ import './App.css';
 import AddTodo from './AddTodo';
 
 class App extends Component {
-  state = {
-    todos: [
-      {id: 1, content: 'buy milk'},
-      {id: 2, content: 'do laudry'}
-    ]
-  }
+  // state = {
+  //   todos: []
+  // }
   deleteTodo = (id) => {
     const todos = this.state.todos.filter(todo => {
       return todo.id !== id
