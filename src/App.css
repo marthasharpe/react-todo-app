@@ -3,3 +3,7 @@
     flex-direction: column;
     align-items: center;
 }
+
+#title {
+    color: rgb(0, 110, 255);
+}
