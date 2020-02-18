@@ -8,13 +8,13 @@ const Todos = (props) => {
     const todoList = props.todos.length ? (props.todos.map(todo => {
         const index = props.todos.indexOf(todo);
         return (
-            <li key={index}>
+            <li className="listItem" key={index}>
+                <button className="delete" onClick={() => props.deleteTodo(index)}>x</button>
                 <span className="todo">{todo}</span>
-                <button onClick={() => props.deleteTodo(index)}>x</button>
             </li>
         )
     })) : (
-        <li>You have nothing to do.</li>
+        <li  className="listItem">You have nothing to do.</li>
     );
 
     return (
